@@ -11,7 +11,7 @@ st.set_page_config(page_title="Comment Analyzer", layout="wide")
 st.title("Comment Analysis: Sentiment, Summary, and Word Cloud")
 
 # 1. Initialize Hugging Face pipelines (with caching to avoid reloading on each run).
-@st.cache(allow_output_mutation=True)
+@st.cache_data(allow_output_mutation=True)
 def load_pipelines():
     sentiment_pipe = pipeline("sentiment-analysis")
     summary_pipe = pipeline("summarization", model="facebook/bart-large-cnn")
