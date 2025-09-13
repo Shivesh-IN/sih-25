@@ -1,0 +1,7 @@
+transformers
+pandas
+streamlit
+wordcloud
+matplotlib
+firebase-admin
+torch
